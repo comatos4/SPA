@@ -8,7 +8,7 @@ function Header() {
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li><Link to="/contact">Contact</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    {/* <li><a href="!#">Repository</a></li> */}
+                    <li><Link to="https://github.com/comatos4/SPA">Repository</Link></li>
                 </ul>
             </div>
         </div>

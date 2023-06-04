@@ -26,21 +26,22 @@ function NoMatch() {
 
 function App() {
   return (
-    <> 
-      <BrowserRouter>
-            < Header />
-            <main className="container content">
-                  <Routes>
-                    <Route path="*" element={<NoMatch />}></Route>
-                    <Route path="/" element={<Home />} />
-                    <Route path="contact/" element={<Contact />} />
-                    <Route path="about/" element={<About />} />
-                    <Route path="category/:name" element={<Category />} />
-                    <Route path="meal/:id" element={<Recipe />} />
-                  </Routes>
-            </main>
-            < Footer />
-      </BrowserRouter>
+    <> <React.Fragment>
+        <BrowserRouter basename="/SPA">
+              < Header />
+              <main className="container content">
+                    <Routes>
+                      <Route path="*" element={<NoMatch />}></Route>
+                      <Route path="/" element={<Home />} />
+                      <Route path="contact/" element={<Contact />} />
+                      <Route path="about/" element={<About />} />
+                      <Route path="category/:name" element={<Category />} />
+                      <Route path="meal/:id" element={<Recipe />} />
+                    </Routes>
+              </main>
+              < Footer />
+        </BrowserRouter>
+        </React.Fragment>
     </>
 
   );
